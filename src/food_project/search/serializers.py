@@ -1,10 +1,11 @@
 from rest_framework import serializers
-from your_app.models import Question, Food
+from . models import Category, Food
 
-class QuestionSerializer(serializers.ModelSerializer):
+class CategorySerializer(serializers.ModelSerializer):
     class Meta:
-        model = Question
+        model = Category
         fields = '__all__'
+
 class FoodSerializer(serializers.ModelSerializer):
     class Meta:
         model = Food
